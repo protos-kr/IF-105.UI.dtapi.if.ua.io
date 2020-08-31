@@ -1,0 +1,10 @@
+<VirtualHost *:80>
+    #    ServerName www.example.com
+    #    ServerAlias example.com
+    DocumentRoot /var/www/dtester
+    ErrorLog /var/log/httpd/dtester/error.log
+    CustomLog /var/log/httpd/dtester/requests.log combined
+    <Directory /var/www/dtester/>
+            AllowOverride All
+    </Directory>
+</VirtualHost>
