@@ -21,7 +21,6 @@ RUN yum update -y \
 	&& npm install -g @angular/cli@8.3.21 \
 	&& npm install -y \
     && rm -rf package-lock.json \
-    && ng test \
     && ng build --prod \
     && mkdir /var/www/dtester/ \
     && cp -r /home/Java/IF-105.UI.dtapi.if.ua.io/dist/IF105/* /var/www/dtester \
