@@ -33,5 +33,4 @@ RUN yum update -y \
 	&& chmod 766 -R /var/www/dtester/ \
     && rm -rf /var/lib/apt/lists/*
 
-
 ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
