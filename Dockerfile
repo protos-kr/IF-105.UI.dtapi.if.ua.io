@@ -12,8 +12,8 @@ RUN yum update -y \
     && cd /home/Java/ \
     && git clone https://github.com/protos-kr/IF-105.UI.dtapi.if.ua.io.git \
     && cd IF-105.UI.dtapi.if.ua.io/ \
-    && sed -i -e "s|https://dtapi.if.ua/api/|http://35.242.219.10/dt-api/|g" /home/Java/IF-105.UI.dtapi.if.ua.io/src/environments/environment.ts \
-    && sed -i -e "s|https://dtapi.if.ua/api/|http://35.242.219.10/dt-api/|g" /home/Java/IF-105.UI.dtapi.if.ua.io/src/environments/environment.prod.ts \
+    && sed -i -e "s|https://dtapi.if.ua/api/|http://34.78.14.59/dt-api/|g" /home/Java/IF-105.UI.dtapi.if.ua.io/src/environments/environment.ts \
+    && sed -i -e "s|https://dtapi.if.ua/api/|http://34.78.14.59/dt-api/|g" /home/Java/IF-105.UI.dtapi.if.ua.io/src/environments/environment.prod.ts \
 	&& curl -sL https://rpm.nodesource.com/setup_12.x | bash - \
 	&& yum clean all && yum makecache fast \
 	&& yum install -y gcc-c++ make \
